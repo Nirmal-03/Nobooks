@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOPS</title>
+    <link rel="stylesheet" href="./styles/mainstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <h2>NoBooks</h2>
+        <div class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">AboutUs</a></li>
+            <li><a href="./update.html">Update</a></li>
+            <li><a href="./contact.html">ContactUs</a></li>
+          </ul>
+        </div>
+        <div class="icons">
+          <div class="home">
+            <i class="bx bxs-home"><a href="index.html"></a></i>
+          </div>
+          <div class="hamburg">
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sidebar">
+          <h3>OOPS & JAVA CONCEPT</h3>
+          <div class="topics">
+            <a href="./oops.html">INTRODUCTION</a>
+            <a href="./inheritance.html">INHERITANCE</a>
+            <a href="./Polymorph.html">POLYMORPHISM</a>
+            <a href="./abstraction.html">ABSTRACTION</a>
+            <a href="./encaps.html">ENCAPSULATION</a>
+            <a href="./constructor.html">CONSTRUCTORS</a>
+            <a href="./packages.html">PACKAGES</a>
+            <a href="./thread.html">THREAD</a>
+            <a href="./multithread.html">MULTITHREADING</a>
+            <a href="./threadlife.html">LIFE CYCLE OF THREAD</a>
+            <a href="./threadcreation.html">CREATING A THREAD</a>
+            <a href="./exception.html">EXCEPTION HIERARCHY</a>
+            <a href="./exhandling.html">EXCEPTION HANDLING</a>
+            <a href="./array.html">ARRAYS</a>
+            <a href="./strings.html">STRING</a>
+            <a href="./wrapperclass.html">WRAPPER CLASS</a>
+            <a href="./accessmodifier.html">ACCESS MODIFIRES</a>
+            <a href="./generic.html">GENERIC PROGRAM</a>
+            <a href="./jdk.html">JDK</a>
+           
+          </div>
+        </div>
+        <div class="content">
+          <div id="intro">
+            <h1>Exception Handling</h1>
+            <br />
+            <p>
+              The Exception Handling in Java is one of the powerful mechanism to
+              handle the runtime errors so that the normal flow of the
+              application can be maintained.
+            </p>
+            <h2>Advantages:</h2>
+            <br />
+            <ul>
+              <li>
+                The core advantage of exception handling is to maintain the
+                normal flow of the application.
+              </li>
+              <li>
+                An exception normally disrupts the normal flow of the
+                application; that is why we need to handle exceptions.
+              </li>
+            </ul>
+            <br />
+            <h2>EXCEPTION KEYWORDS</h2>
+            <br />
+            <div class="excep">
+              <br />
+              <img src="./images/keywords.png" alt="ji" />
+            </div>
+            <h2>Example:</h2>
+            <br />
+            <div class="ex1">
+              <iframe
+                src="https://trinket.io/embed/java/0fece1daf8"
+                width="100%"
+                height="356"
+                frameborder="0"
+                marginwidth="0"
+                marginheight="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <br /><br /><br />
+          </div>
+          <footer>
+            &copy;Copyrights:
+            <a href="mailto:nobooks125@gmail.com">nobooks125@gmail.com</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script>
+      let btn = document.querySelector(".hamburg");
+      let show = document.querySelector(".sidebar");
+      let homebtn = document.querySelector(".home");
+      let homeShow = document.querySelector(".menu");
+      homebtn.addEventListener("click", () => {
+        homeShow.classList.toggle("add");
+        show.classList.remove("add");
+      });
+
+      btn.addEventListener("click", () => {
+        show.classList.toggle("add");
+        homeShow.classList.remove("add");
+      });
+    </script>
+  </body>
+</html>

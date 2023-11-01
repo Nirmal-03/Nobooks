@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOPS</title>
+    <link rel="stylesheet" href="./styles/mainstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <h2>NoBooks</h2>
+        <div class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">AboutUs</a></li>
+            <li><a href="./update.html">Update</a></li>
+            <li><a href="./contact.html">ContactUs</a></li>
+          </ul>
+        </div>
+        <div class="icons">
+          <div class="home">
+            <i class="bx bxs-home"><a href="index.html"></a></i>
+          </div>
+          <div class="hamburg">
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sidebar">
+          <h3>OOPS & JAVA CONCEPT</h3>
+          <div class="topics">
+            <a href="./oops.html">INTRODUCTION</a>
+            <a href="./inheritance.html">INHERITANCE</a>
+            <a href="./Polymorph.html">POLYMORPHISM</a>
+            <a href="./abstraction.html">ABSTRACTION</a>
+            <a href="./encaps.html">ENCAPSULATION</a>
+            <a href="./constructor.html">CONSTRUCTORS</a>
+            <a href="./packages.html">PACKAGES</a>
+            <a href="./thread.html">THREAD</a>
+            <a href="./multithread.html">MULTITHREADING</a>
+            <a href="./threadlife.html">LIFE CYCLE OF THREAD</a>
+            <a href="./threadcreation.html">CREATING A THREAD</a>
+            <a href="./exception.html">EXCEPTION HIERARCHY</a>
+            <a href="./exhandling.html">EXCEPTION HANDLING</a>
+            <a href="./array.html">ARRAYS</a>
+            <a href="./strings.html">STRING</a>
+            <a href="./wrapperclass.html">WRAPPER CLASS</a>
+            <a href="./accessmodifier.html">ACCESS MODIFIRES</a>
+            <a href="./generic.html">GENERIC PROGRAM</a>
+            <a href="./jdk.html">JDK</a>
+         
+          </div>
+        </div>
+        <div class="content">
+          <div id="intro">
+            <h1>Encapsulation</h1>
+            <br />
+            <p>
+              Encapsulation in Java is a process of wrapping code and data
+              together into a single unit, for example, a capsule which is mixed
+              of several medicines.
+            </p>
+            <h2>Advantages:</h2>
+            <br />
+            <ul>
+              <li>
+                By providing only a setter or getter method, you can make the
+                class read-only or write-only. In other words, you can skip the
+                getter or setter methods.
+              </li>
+              <li>It provides you the control over the data.</li>
+              <li>
+                The encapsulate class is easy to test. So, it is better for unit
+                testing.
+              </li>
+            </ul>
+            <br />
+
+            <h2>Example:</h2>
+            <br />
+            <br />
+            <div class="ex">
+              <iframe
+                src="https://trinket.io/embed/java/6da99ff630"
+                width="100%"
+                height="356"
+                frameborder="0"
+                marginwidth="0"
+                marginheight="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <br />
+            <h2>Code explantion:</h2>
+            <br />
+
+            <div class="ex2">
+              <p>
+                In this simpler example, we have a Person class with private
+                data members name and age. We use constructor to set the values
+                of these private members during object creation, and we provide
+                public getter methods to access the values of these private
+                members. This way, the internal data (name and age) of the
+                Person class is encapsulated and can only be accessed through
+                the provided getter methods, providing better control and data
+                protection.
+              </p>
+            </div>
+          </div>
+
+          <footer>
+            &copy;Copyrights:
+            <a href="mailto:nobooks125@gmail.com">nobooks125@gmail.com</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script>
+      let btn = document.querySelector(".hamburg");
+      let show = document.querySelector(".sidebar");
+      let homebtn = document.querySelector(".home");
+      let homeShow = document.querySelector(".menu");
+      homebtn.addEventListener("click", () => {
+        homeShow.classList.toggle("add");
+        show.classList.remove("add");
+      });
+
+      btn.addEventListener("click", () => {
+        show.classList.toggle("add");
+        homeShow.classList.remove("add");
+      });
+    </script>
+  </body>
+</html>

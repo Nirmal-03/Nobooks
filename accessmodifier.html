@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOPS</title>
+    <link rel="stylesheet" href="./styles/mainstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+
+      .cell {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+        background-color: #f2f2f2;
+        color: #333;
+        flex-basis: calc(20% - 5px); /* Adjust the width as needed */
+      }
+
+      .cell.header {
+        background-color: #333;
+        color: #fff;
+      }
+
+      .cell.tick {
+        background-color: #7bdcb5;
+        color: #fff;
+      }
+      @media (max-width:600px){
+        .cell{
+            padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <h2>NoBooks</h2>
+        <div class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">AboutUs</a></li>
+            <li><a href="./update.html">Update</a></li>
+            <li><a href="./contact.html">ContactUs</a></li>
+          </ul>
+        </div>
+        <div class="icons">
+          <div class="home">
+            <i class="bx bxs-home"><a href="index.html"></a></i>
+          </div>
+          <div class="hamburg">
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sidebar">
+          <h3>OOPS & JAVA CONCEPT</h3>
+          <div class="topics">
+            <a href="./oops.html">INTRODUCTION</a>
+            <a href="./inheritance.html">INHERITANCE</a>
+            <a href="./Polymorph.html">POLYMORPHISM</a>
+            <a href="./abstraction.html">ABSTRACTION</a>
+            <a href="./encaps.html">ENCAPSULATION</a>
+            <a href="./constructor.html">CONSTRUCTORS</a>
+            <a href="./packages.html">PACKAGES</a>
+            <a href="./thread.html">THREAD</a>
+            <a href="./multithread.html">MULTITHREADING</a>
+            <a href="./threadlife.html">LIFE CYCLE OF THREAD</a>
+            <a href="./threadcreation.html">CREATING A THREAD</a>
+            <a href="./exception.html">EXCEPTION HIERARCHY</a>
+            <a href="./exhandling.html">EXCEPTION HANDLING</a>
+            <a href="./array.html">ARRAYS</a>
+            <a href="./strings.html">STRING</a>
+            <a href="./wrapperclass.html">WRAPPER CLASS</a>
+            <a href="./accessmodifier.html">ACCESS MODIFIRES</a>
+            <a href="./generic.html">GENERIC PROGRAM</a>
+            <a href="./jdk.html">JDK</a>
+            
+          </div>
+        </div>
+        <div class="content">
+          <div id="intro">
+            <h1 class="heading">Access Modifier</h1>
+            <p>
+              An access modifier, in the context of programming languages like
+              Java, is a keyword that determines the accessibility or visibility
+              of classes, methods, and variables within a program. It specifies
+              the level of access or restrictions placed on these elements and
+              defines who can access them and from where.
+            </p>
+
+            <div class="class-object">
+              <h2>There are Four types of Access Modifier</h2>
+              <br />
+              <p>
+                <b>1.Public<br /> </b> Accessible in all the packages
+              </p>
+              <p>
+                <b>2.Proctected:<br /> </b> Accessible to all classes in its own
+                package and only in child class of another package.
+              </p>
+              <p>
+                <b>3.Private:<br /> </b> Only with in the class we can access
+              </p>
+              <p>
+                <b>4.Deafult:<br /> </b> Only with in the package we can access
+              </p>
+              <br />
+              <br />
+
+              <h2>Access Modifier Aplicable in</h2>
+              <br />
+
+              <div class="container">
+                <div class="row">
+                  <div class="cell header"></div>
+                  <div class="cell header">Classes</div>
+                  <div class="cell header">Methods</div>
+                  <div class="cell header">Variables</div>
+                  <div class="cell header">Interfaces</div>
+                  <div class="cell header">Constructors</div>
+                </div>
+                <div class="row">
+                  <div class="cell header">public</div>
+                  <div class="cell tick">✓</div>
+                  <div class="cell tick">✓</div>
+                  <div class="cell tick">✓</div>
+                  <div class="cell tick">✓</div>
+                  <div class="cell tick">✓</div>
+                </div>
+                <div class="row">
+                  <div class="cell header">private</div>
+                  <div class="cell"></div>
+                  <div class="cell tick">✓</div>
+                  <div class="cell tick">✓</div>
+                  <div class="cell"></div>
+                  <div class="cell tick">✓</div>
+                </div>
+                <div class="row">
+                  <div class="cell header">protected</div>
+                  <div class="cell"></div>
+                  <div class="cell tick">✓</div>
+                  <div class="cell tick">✓</div>
+                  <div class="cell tick">✓</div>
+                  <div class="cell"></div>
+                </div>
+                <div class="row">
+                  <div class="cell header">default</div>
+                  <div class="cell"></div>
+                  <div class="cell"></div>
+                  <div class="cell tick">✓</div>
+                  <div class="cell"></div>
+                  <div class="cell"></div>
+                </div>
+              </div>
+
+              <br />
+
+              <h2>Example for Access Modifier(Private)</h2>
+
+              <p>
+                In this example, we have created two classes A and Simple. A
+                class contains private data member and private method. We are
+                accessing these private members from outside the class, so there
+                is a compile-time error.
+              </p>
+
+              <h2>Example</h2>
+              <div class="ex3">
+                <iframe
+                  src="https://trinket.io/embed/java/810c3e055d"
+                  width="100%"
+                  height="356"
+                  frameborder="0"
+                  marginwidth="0"
+                  marginheight="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <footer>
+            &copy;Copyrights:
+            <a href="mailto:nobooks125@gmail.com">nobooks125@gmail.com</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script>
+      let btn = document.querySelector(".hamburg");
+      let show = document.querySelector(".sidebar");
+      let homebtn = document.querySelector(".home");
+      let homeShow = document.querySelector(".menu");
+      homebtn.addEventListener("click", () => {
+        homeShow.classList.toggle("add");
+        show.classList.remove("add");
+      });
+
+      btn.addEventListener("click", () => {
+        show.classList.toggle("add");
+        homeShow.classList.remove("add");
+      });
+    </script>
+  </body>
+</html>

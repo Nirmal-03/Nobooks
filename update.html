@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NobookS</title>
+    <link rel="stylesheet" href="./styles/mainstyle.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <style>
+      .subjects{
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+          rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+          rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+          rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        padding: 50px 0;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        margin: 0 30px;
+      }
+      @media (max-width:1000px){
+        .subjects{
+            width: 70%;
+            margin: 30px 0;
+        }
+        .content{
+            flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainpage">
+      <div class="navbar">
+        <h2>NoBooks</h2>
+        <div class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">AboutUs</a></li>
+            <li><a href="./update.html">Update</a></li>
+            <li><a href="./contact.html">ContactUs</a></li>
+          </ul>
+        </div>
+        <div class="icons">
+          <div class="home">
+            <i class="bx bxs-home"><a href="index.html"></a></i>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="subjects">DATE STRUCTURE</div>
+        <div class="subjects">DBMS</div>
+        <div class="subjects">DATA SCIENCE</div>
+      </div>
+      <div class="footer">
+        &copy;Copyrights:
+        <a href="mailto:nobooks125@gmail.com">nobooks125@gmail.com</a>
+      </div>
+    </div>
+    <script>
+      let homebtn = document.querySelector(".home");
+      let homeShow = document.querySelector(".menu");
+      console.log(homebtn);
+      console.log(homeShow);
+      homebtn.addEventListener("click", () => {
+        homeShow.classList.toggle("add");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOPS</title>
+    <link rel="stylesheet" href="./styles/mainstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <h2>NoBooks</h2>
+        <div class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">AboutUs</a></li>
+            <li><a href="./update.html">Update</a></li>
+            <li><a href="./contact.html">ContactUs</a></li>
+          </ul>
+        </div>
+        <div class="icons">
+            <div class="home">
+                <i class='bx bxs-home'><a href="index.html"></a></i>
+            </div>
+            <div class="hamburg">
+              <i class="bx bx-menu"></i>
+            </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sidebar">
+          <h3>OOPS & JAVA CONCEPT</h3>
+          <div class="topics">
+            <a href="./oops.html">INTRODUCTION</a>
+            <a href="./inheritance.html">INHERITANCE</a>
+            <a href="./Polymorph.html">POLYMORPHISM</a>
+            <a href="./abstraction.html">ABSTRACTION</a>
+            <a href="./encaps.html">ENCAPSULATION</a>
+            <a href="./constructor.html">CONSTRUCTORS</a>
+            <a href="./packages.html">PACKAGES</a>
+            <a href="./thread.html">THREAD</a>
+            <a href="./multithread.html">MULTITHREADING</a>
+            <a href="./threadlife.html">LIFE CYCLE OF THREAD</a>
+            <a href="./threadcreation.html">CREATING A THREAD</a>
+            <a href="./exception.html">EXCEPTION HIERARCHY</a>
+            <a href="./exhandling.html">EXCEPTION HANDLING</a>
+            <a href="./array.html">ARRAYS</a>
+            <a href="./strings.html">STRING</a>
+            <a href="./wrapperclass.html">WRAPPER CLASS</a>
+            <a href="./accessmodifier.html">ACCESS MODIFIRES</a>
+            <a href="./generic.html">GENERIC PROGRAM</a>
+            <a href="./jdk.html">JDK</a>
+          </div>
+        </div>
+        <div class="content">
+            <div id="intro" >
+                <h1 class='heading'>Polymorphism</h1>
+                <p>One thing into many forms. <br>
+                    Polymorphism, in the context of object-oriented programming, refers to the ability of objects to take on different forms or behaviors. It allows different objects to be treated as if they belong to a common type, enabling code flexibility and reusability.
+                </p>
+                
+                <div class="class-object">
+                <h2>                          There are two types of polymorphism
+                </h2><br>
+                <p><b>1.Compile time polymorphism / Static binding:<br>
+                </b>We can achieve compile time polymorphism using <b>Method overloading</b>
+                </p>
+                <p><b>2.Runtime polymorphism /Dynamic binding:<br>
+                 </b> We can achieve Run time polymorphism using <b>Method overriding</b>
+            </p>
+                <br>
+                    <h2>Polymorphism is a Greek word</h2><br>
+        <p>Poly - means – Many <br>
+            Morphism – means - forms
+            
+        </p>
+        
+            
+          <br><h2>Overloading</h2>
+          <p>Three types of overloading in JAVA</p>
+            <ul>
+                
+        
+        <li>Method overloading
+            .</li>
+            <li>Counstructor overloading
+                .</li>
+                <li>Operator overloading
+                    .</li>
+        
+         </ul>
+        
+         <h2>Method Overloading</h2> 
+        
+        <p>If a class contains more than one method with the same name but different no of arguments  or same name ,same no of arguments but different data type is called overloaded methods.
+        </p>
+            
+                <h2>Example</h2>
+                <div class="ex3">
+                    <iframe src="https://trinket.io/embed/java/979b39fe85" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                </div>
+            
+        
+                <h2>Constructor Overloading</h2> 
+        
+        <p>If a class contains more than one constructor with different no of arguments  or  same no of arguments but different data type is called overloaded constructor.
+        
+        </p>
+            
+                <h2>Example</h2>
+                <div class="ex3">
+                    <iframe src="https://trinket.io/embed/java/b33cce00c1" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                </div>
+            
+                <h2>Operator Overloading</h2> 
+        
+        <p>If a class contains more than one constructor with different no of arguments  or  same no of arguments but different data type is called overloaded constructor.
+        </p>
+        <ul>
+                
+            <li>One operator with more than one behavior is called operator overloading.
+        
+            </li> 
+            <li>JAVA is not supporting operator overloading.</li>
+            <li>But implicitly there is a operator in java called + operator will take care by JVM to perform operator overloading
+            JAVA is not supporting operator overloading.
+            </li></ul>
+            
+                
+             <h2>Overloadinng Vs Overriding </h2>
+             <ul>
+                
+                <li>To achieve overloading One JAVA class is enough….
+        </li>
+                <li>To achieve overriding two classes is required with Inheritance.
+                </li></ul>
+                <h2> Overriding in Java </h2>
+                <ul>
+                   
+                   <li><p>In any object-oriented programming language, Overriding is a feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes. 
+        
+           </p></li>
+                   <li><p>When a method in a subclass has the same name, same parameters or signature, and same return type as a method in its super-class, then the method in the subclass is said to override the method in the super-class.
+        </p>
+                   </li></ul>
+                
+        
+                <h2>Example</h2>
+                <div class="ex3">
+                    <iframe src="https://trinket.io/embed/java/0454ced3a1" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                </div>
+                </div>
+        
+                </div>
+          <footer>
+            &copy;Copyrights: <a href="mailto:nobooks125@gmail.com">nobooks125@gmail.com</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script>
+        let btn=document.querySelector(".hamburg");
+        let show=document.querySelector(".sidebar");
+        let homebtn=document.querySelector(".home");
+        let homeShow=document.querySelector(".menu");
+        homebtn.addEventListener("click",()=>{
+            homeShow.classList.toggle("add");
+            show.classList.remove("add");
+        });
+
+        btn.addEventListener("click",()=>{
+            show.classList.toggle("add");
+            homeShow.classList.remove("add");
+        });
+    </script>
+  </body>
+</html>

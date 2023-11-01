@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOPS</title>
+    <link rel="stylesheet" href="./styles/mainstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <h2>NoBooks</h2>
+        <div class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">AboutUs</a></li>
+            <li><a href="./update.html">Update</a></li>
+            <li><a href="./contact.html">ContactUs</a></li>
+          </ul>
+        </div>
+        <div class="icons">
+            <div class="home">
+                <i class='bx bxs-home'><a href="index.html"></a></i>
+            </div>
+            <div class="hamburg">
+              <i class="bx bx-menu"></i>
+            </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sidebar">
+          <h3>OOPS & JAVA CONCEPT</h3>
+          <div class="topics">
+            <a href="./oops.html">INTRODUCTION</a>
+            <a href="./inheritance.html">INHERITANCE</a>
+            <a href="./Polymorph.html">POLYMORPHISM</a>
+            <a href="./abstraction.html">ABSTRACTION</a>
+            <a href="./encaps.html">ENCAPSULATION</a>
+            <a href="./constructor.html">CONSTRUCTORS</a>
+            <a href="./packages.html">PACKAGES</a>
+            <a href="./thread.html">THREAD</a>
+            <a href="./multithread.html">MULTITHREADING</a>
+            <a href="./threadlife.html">LIFE CYCLE OF THREAD</a>
+            <a href="./threadcreation.html">CREATING A THREAD</a>
+            <a href="./exception.html">EXCEPTION HIERARCHY</a>
+            <a href="./exhandling.html">EXCEPTION HANDLING</a>
+            <a href="./array.html">ARRAYS</a>
+            <a href="./strings.html">STRING</a>
+            <a href="./wrapperclass.html">WRAPPER CLASS</a>
+            <a href="./accessmodifier.html">ACCESS MODIFIRES</a>
+            <a href="./generic.html">GENERIC PROGRAM</a>
+            <a href="./jdk.html">JDK</a>
+          
+          </div>
+        </div>
+        <div class="content">
+            <div id="intro">
+                <h1 class='heading'>JDK (Java Development Kit)</h1>
+                <p><br><br>
+                    •	The Java Development Kit (JDK) is a software development environment which is used to develop Java applications and applets. <br><br>
+                    •	It  <b><i>physically</b></i> exists.<br><br>
+                    •	JDK consists of JRE and other development tools such as <b><i>java (interpreter/loader), javac (compiler),Javadoc (a documentation generator), jar(an archiever) etc. to complete the development of a Java Application.
+                    </b></i>
+                    <br><br>
+                </p>
+        
+           <img src="./images/jdk.jpg">
+        
+                 <br><br>
+                 <p>
+                 1. Java sourecode(.java) get compiled using Java compiler (javac) and converted  into byte code(.class).<br><br>
+                 2. JVM loads byte code and other libraries.<br><br>
+                 3. Execution of the byte code takes place in JVM.<br><br></p>
+                 
+                 <h1 class='heading'>JRE (Java Runtime Environment)</h1>
+                 <p><br><br>
+                     •	It is used to provide the  <b><i>runtime environment</b></i>. It is the implementation of JVM.<br><br>
+                     •	It physically exists<br><br>
+                     •	It contains a  <b><i>set of libraries + other files that JVM uses at runtime</b></i>.<br><br>
+                    </p>
+                     
+         
+          <img src="./images/jre.jpg">
+        
+                  <br><br>
+                  <h1 class='heading'>JVM (Java Virtual machine)</h1>
+                <p><br><br>
+                    •	It is called a <b><i>virtual machine </b></i> because it doesn't physically exist<br><br>
+                    •	It is a specification that provides a runtime environment in which Java bytecode can be executed. <br><br>
+                    •	It can also run those programs which are written in other languages and compiled to Java byte code.<br><br>
+                    •	JVM, JRE, and JDK are <b><i>platform dependent </b></i> because the configuration of each OS is different from each other. However, Java is platform independent.
+                    <br><br>
+                    </b></i>
+                    <br><br>
+                </p>
+        
+        
+           <img src="./images/jvm.jpg">
+        
+                 <br><br>
+        
+                 </div>
+          <footer>
+            &copy;Copyrights: <a href="mailto:nobooks125@gmail.com">nobooks125@gmail.com</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script>
+        let btn=document.querySelector(".hamburg");
+        let show=document.querySelector(".sidebar");
+        let homebtn=document.querySelector(".home");
+        let homeShow=document.querySelector(".menu");
+        homebtn.addEventListener("click",()=>{
+            homeShow.classList.toggle("add");
+            show.classList.remove("add");
+        });
+
+        btn.addEventListener("click",()=>{
+            show.classList.toggle("add");
+            homeShow.classList.remove("add");
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOPS</title>
+    <link rel="stylesheet" href="./styles/mainstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <h2>NoBooks</h2>
+        <div class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">AboutUs</a></li>
+            <li><a href="./update.html">Update</a></li>
+            <li><a href="./contact.html">ContactUs</a></li>
+          </ul>
+        </div>
+        <div class="icons">
+          <div class="home">
+            <i class="bx bxs-home"><a href="index.html"></a></i>
+          </div>
+          <div class="hamburg">
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sidebar">
+          <h3>OOPS & JAVA CONCEPT</h3>
+          <div class="topics">
+            <a href="./oops.html">INTRODUCTION</a>
+            <a href="./inheritance.html">INHERITANCE</a>
+            <a href="./Polymorph.html">POLYMORPHISM</a>
+            <a href="./abstraction.html">ABSTRACTION</a>
+            <a href="./encaps.html">ENCAPSULATION</a>
+            <a href="./constructor.html">CONSTRUCTORS</a>
+            <a href="./packages.html">PACKAGES</a>
+            <a href="./thread.html">THREAD</a>
+            <a href="./multithread.html">MULTITHREADING</a>
+            <a href="./threadlife.html">LIFE CYCLE OF THREAD</a>
+            <a href="./threadcreation.html">CREATING A THREAD</a>
+            <a href="./exception.html">EXCEPTION HIERARCHY</a>
+            <a href="./exhandling.html">EXCEPTION HANDLING</a>
+            <a href="./array.html">ARRAYS</a>
+            <a href="./strings.html">STRING</a>
+            <a href="./wrapperclass.html">WRAPPER CLASS</a>
+            <a href="./accessmodifier.html">ACCESS MODIFIRES</a>
+            <a href="./generic.html">GENERIC PROGRAM</a>
+            <a href="./jdk.html">JDK</a>
+           
+          </div>
+        </div>
+        <div class="content">
+          <div id="intro">
+            <h1>ARRAY in Java</h1>
+            <br />
+            <p>
+              Java array is an object which contains elements of a similar data
+              type. Additionally, The elements of an array are stored in a
+              contiguous memory location. It is a data structure where we store
+              similar elements. We can store only a fixed set of elements in a
+              Java array.
+            </p>
+            <br />
+            <h2>Advantages:</h2>
+            <br />
+            <ul>
+              <li>
+                <b>Code Optimization:</b> It makes the code optimized, we can
+                retrieve or sort the data efficiently.
+              </li>
+              <li>
+                <b>Random access:</b> We can get any data located at an index
+                position.
+              </li>
+            </ul>
+            <br />
+            <h2>Disadvantages:</h2>
+            <br />
+            <ul>
+              <li>
+                <b>Size Limit:</b> We can store only the fixed size of elements
+                in the array. It doesn't grow its size at runtime. To solve this
+                problem, collection framework is used in Java which grows
+                automatically.
+              </li>
+            </ul>
+            <div class="array">
+              <img src="./images/array.png" alt="array" />
+            </div>
+            <h2>Types of Array:</h2>
+            <br />
+            <ul>
+              <li>Single Dimensional Array</li>
+              <li>Multidimensional Array</li>
+            </ul>
+            <br />
+
+            <h2>Single Dimensional Array:</h2>
+            <p>
+              In Java, a single-dimensional array, also known as a
+              one-dimensional array, is a data structure that allows you to
+              store a fixed number of elements of the same type in a linear
+              sequence. <br />
+              Each element in the array can be accessed using its index, which
+              represents its position within the array.
+            </p>
+            <br />
+            <h2>Example:</h2>
+            <br />
+            <div class="ex">
+              <iframe
+                src="https://trinket.io/embed/java/8c09219065"
+                width="100%"
+                height="356"
+                frameborder="0"
+                marginwidth="0"
+                marginheight="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <h2>MultiDimensional Array:</h2>
+            <br />
+            <p>
+              In Java, a multidimensional array is an array that contains other
+              arrays as its elements. <br />
+              It allows you to represent data in multiple dimensions, such as a
+              matrix or a table. <br />
+              In Java, you can create multidimensional arrays with two or more
+              dimensions.
+            </p>
+            <br />
+            <h2>Example:</h2>
+            <br />
+            <div class="ex2">
+              <iframe
+                src="https://trinket.io/embed/java/8f77425207"
+                width="100%"
+                height="356"
+                frameborder="0"
+                marginwidth="0"
+                marginheight="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <footer>
+            &copy;Copyrights:
+            <a href="mailto:nobooks125@gmail.com">nobooks125@gmail.com</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script>
+      let btn = document.querySelector(".hamburg");
+      let show = document.querySelector(".sidebar");
+      let homebtn = document.querySelector(".home");
+      let homeShow = document.querySelector(".menu");
+      homebtn.addEventListener("click", () => {
+        homeShow.classList.toggle("add");
+        show.classList.remove("add");
+      });
+
+      btn.addEventListener("click", () => {
+        show.classList.toggle("add");
+        homeShow.classList.remove("add");
+      });
+    </script>
+  </body>
+</html>

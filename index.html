@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NobookS</title>
+    <link rel="stylesheet" href="./styles/mainstyle.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    
+  />
+</head>
+<body>
+    <div class="mainpage">
+        <div class="navbar">
+            <h2>NoBooks</h2>
+            <div class="menu">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">AboutUs</a></li>
+                <li><a href="./update.html">Update</a></li>
+                <li><a href="./contact.html">ContactUs</a></li>
+              </ul>
+            </div>
+            <div class="icons">
+                <div class="home">
+                    <i class='bx bxs-home'><a href="index.html"></a></i>
+                </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="col1">
+                <h1>"Learning is <span>wonderful</span> because no one can take it away from you"</h1>
+                <div class="btnbox">
+                    <button class="cn"><a href="oops.html">GET STARTED</a></button>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="form">
+                    <div class="con">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email">
+                    <input type="password" name="" placeholder="Enter Password ">
+                    <button class="btnn"><a href="#">Login</a></button>
+                    <p class="link">Don't have an account<br>
+                        <a href="#">Sign up </a> here</a>
+                    </p>
+                    
+    
+                        <div class="icons">
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                          
+                        </div>
+    
+                    </div>
+                 </div>
+            </div>
+          </div>
+          <div class="footer">
+            &copy;Copyrights: <a href="mailto:nobooks125@gmail.com">nobooks125@gmail.com</a>
+          </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+        let homebtn=document.querySelector(".home");
+        let homeShow=document.querySelector(".menu");
+        console.log(homebtn);
+        console.log(homeShow);
+        homebtn.addEventListener("click",()=>{
+            homeShow.classList.toggle("add");
+        });
+    </script>
+</body>
+</html>

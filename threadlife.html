@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOPS</title>
+    <link rel="stylesheet" href="./styles/mainstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <h2>NoBooks</h2>
+        <div class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">AboutUs</a></li>
+            <li><a href="./update.html">Update</a></li>
+            <li><a href="./contact.html">ContactUs</a></li>
+          </ul>
+        </div>
+        <div class="icons">
+          <div class="home">
+            <i class="bx bxs-home"><a href="index.html"></a></i>
+          </div>
+          <div class="hamburg">
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sidebar">
+          <h3>OOPS & JAVA CONCEPT</h3>
+          <div class="topics">
+            <a href="./oops.html">INTRODUCTION</a>
+            <a href="./inheritance.html">INHERITANCE</a>
+            <a href="./Polymorph.html">POLYMORPHISM</a>
+            <a href="./abstraction.html">ABSTRACTION</a>
+            <a href="./encaps.html">ENCAPSULATION</a>
+            <a href="./constructor.html">CONSTRUCTORS</a>
+            <a href="./packages.html">PACKAGES</a>
+            <a href="./thread.html">THREAD</a>
+            <a href="./multithread.html">MULTITHREADING</a>
+            <a href="./threadlife.html">LIFE CYCLE OF THREAD</a>
+            <a href="./threadcreation.html">CREATING A THREAD</a>
+            <a href="./exception.html">EXCEPTION HIERARCHY</a>
+            <a href="./exhandling.html">EXCEPTION HANDLING</a>
+            <a href="./array.html">ARRAYS</a>
+            <a href="./strings.html">STRING</a>
+            <a href="./wrapperclass.html">WRAPPER CLASS</a>
+            <a href="./accessmodifier.html">ACCESS MODIFIRES</a>
+            <a href="./generic.html">GENERIC PROGRAM</a>
+            <a href="./jdk.html">JDK</a>
+            
+          </div>
+        </div>
+        <div class="content">
+          <div id="intro">
+            <h1 class="heading">Thread Life Cycle</h1>
+            <p>
+              A thread can be in one of the five states. According to sun, there
+              is only 4 states in thread life cycle in java new, runnable,
+              non-runnable and terminated. There is no running state. But for
+              better understanding the threads, we are explaining it in the 5
+              states.<br /><br /><br />
+              The life cycle of the thread in java is controlled by JVM. The
+              java thread states are as follows:<br /><br /><br />
+              <b>1&#41; New</b>
+              The thread is in new state if you create an instance of Thread
+              class but before the invocation of start() method.<br /><br /><br />
+              <b>2&#41; Runnable</b>
+              The thread is in runnable state after invocation of start()
+              method, but the thread scheduler has not selected it to be the
+              running thread.<br /><br /><br />
+              <b>3&#41; Running</b>
+              The thread is in running state if the thread scheduler has
+              selected it.<br /><br /><br />
+              <b>4&#41; Non-Runnable (Blocked)</b>
+              This is the state when the thread is still alive, but is currently
+              not eligible to run.<br /><br /><br />
+              <b>5&#41; Terminated</b>
+              A thread is in terminated or dead state when its run() method
+              exits.<br /><br /><br />
+            </p>
+            <br />
+            <img src="./images/life cycel.jpg" />
+
+            <br />
+            <br />
+          </div>
+          <footer>
+            &copy;Copyrights:
+            <a href="mailto:nobooks125@gmail.com">nobooks125@gmail.com</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script>
+      let btn = document.querySelector(".hamburg");
+      let show = document.querySelector(".sidebar");
+      let homebtn = document.querySelector(".home");
+      let homeShow = document.querySelector(".menu");
+      homebtn.addEventListener("click", () => {
+        homeShow.classList.toggle("add");
+        show.classList.remove("add");
+      });
+
+      btn.addEventListener("click", () => {
+        show.classList.toggle("add");
+        homeShow.classList.remove("add");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NobookS</title>
+    <link rel="stylesheet" href="./styles/mainstyle.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    
+  />
+</head>
+<body>
+    <div class="mainpage">
+        <div class="navbar">
+            <h2>NoBooks</h2>
+            <div class="menu">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">AboutUs</a></li>
+                <li><a href="./update.html">Update</a></li>
+                <li><a href="./contact.html">ContactUs</a></li>
+              </ul>
+            </div>
+            <div class="icons">
+                <div class="home">
+                    <i class='bx bxs-home'><a href="index.html"></a></i>
+                </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="contactbox">
+                <h1>Contact Us</h1>
+                <form onsubmit="sendemail(event)" >
+                    <label for="username">Gmail:</label>
+                    <input type="text" id="username" name="username" required><br><br>
+            
+                  
+            
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" required></textarea><br><br>
+                    <div class="clk"><input id="sub"   type="submit" value="Submit"></div>
+                </form>
+              </div>
+          </div>
+          <div class="footer">
+            &copy;Copyrights: <a href="mailto:nobooks125@gmail.com">nobooks125@gmail.com</a>
+          </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+        let homebtn=document.querySelector(".home");
+        let homeShow=document.querySelector(".menu");
+        console.log(homebtn);
+        console.log(homeShow);
+        homebtn.addEventListener("click",()=>{
+            homeShow.classList.toggle("add");
+        });
+        function sendemail(e){
+                  e.preventDefault();
+            
+                 Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "janishkumarjk25@gmail.com",
+                Password : "1FAC9B37ED07A6842DBCA053C4B9884CF5C9",
+                To : 'janishkumarjk25@gmail.com',
+                From : 'janishkumarjk25@gmail.com',
+                Subject : document.getElementById('username').value,
+                Body : document.getElementById('comments').value
+            }).then(
+              message => alert("Email sent Successfully")
+            );
+               return true; 
+            }
+    </script>
+</body>
+</html>

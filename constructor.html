@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOPS</title>
+    <link rel="stylesheet" href="./styles/mainstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <h2>NoBooks</h2>
+        <div class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">AboutUs</a></li>
+            <li><a href="./update.html">Update</a></li>
+            <li><a href="./contact.html">ContactUs</a></li>
+          </ul>
+        </div>
+        <div class="icons">
+            <div class="home">
+                <i class='bx bxs-home'><a href="index.html"></a></i>
+            </div>
+            <div class="hamburg">
+              <i class="bx bx-menu"></i>
+            </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sidebar">
+          <h3>OOPS & JAVA CONCEPT</h3>
+          <div class="topics">
+            <a href="./oops.html">INTRODUCTION</a>
+            <a href="./inheritance.html">INHERITANCE</a>
+            <a href="./Polymorph.html">POLYMORPHISM</a>
+            <a href="./abstraction.html">ABSTRACTION</a>
+            <a href="./encaps.html">ENCAPSULATION</a>
+            <a href="./constructor.html">CONSTRUCTORS</a>
+            <a href="./packages.html">PACKAGES</a>
+            <a href="./thread.html">THREAD</a>
+            <a href="./multithread.html">MULTITHREADING</a>
+            <a href="./threadlife.html">LIFE CYCLE OF THREAD</a>
+            <a href="./threadcreation.html">CREATING A THREAD</a>
+            <a href="./exception.html">EXCEPTION HIERARCHY</a>
+            <a href="./exhandling.html">EXCEPTION HANDLING</a>
+            <a href="./array.html">ARRAYS</a>
+            <a href="./strings.html">STRING</a>
+            <a href="./wrapperclass.html">WRAPPER CLASS</a>
+            <a href="./accessmodifier.html">ACCESS MODIFIRES</a>
+            <a href="./generic.html">GENERIC PROGRAM</a>
+            <a href="./jdk.html">JDK</a>
+           
+          </div>
+        </div>
+        <div class="content">
+            <div id="intro">
+                <h1 class='heading'>Constructor</h1>
+                <p>
+                    In Java, a constructor is a special method that is used to initialize objects of a class. It is called automatically when an object is created using the new keyword. The primary purpose of a constructor is to set the initial state of an object by assigning values to its instance variables or performing other necessary setup tasks.
+                </p>
+        
+        
+                
+                <div class="class-object">
+                <h2>                          There are two types of Constructor
+                </h2><br>
+                <p><b>1.Default Constructor:<br>
+                </b>
+                A default constructor is a constructor provided by Java if no constructors are explicitly defined in a class, and it initializes the object with default values.</b>
+                </p>
+                <p><b>2.User-Defined Constructor<br>
+                 </b> A user-defined constructor is a constructor explicitly defined in a class by the programmer to initialize objects with custom values or perform specific initialization tasks</b>
+            </p>
+                <br>
+                    <h2>          How to declare a constructor in java?</h2><br>
+        <p>1.Constructor name & class name must be same<br>
+            2.Constructor should accept parameters<br>
+            3.Constructor will not have return type.<br>
+            4.Constructor is a special type of method<br>
+            
+            
+        </p>
+        
+            
+          <br><h2>Example for Default Constructor</h2>
+          <div class="ex3">
+            <iframe src="https://trinket.io/embed/java/3470bd0b34" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+        
+        <br><h2>Example for User-Defined Constructor</h2>
+          <div class="ex3">
+            <iframe src="https://trinket.io/embed/java/0f1c2ad61f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+        
+         <h2>Constructor Calling</h2> 
+        
+        <p>If a class contains more than one method with the same name but different no of arguments  or same name ,same no of arguments but different data type is called overloaded methods.
+        </p>
+            
+                <h2>Example for constructor calling using this() keyword</h2>
+                <div class="ex3">
+                    <iframe src="https://trinket.io/embed/java/c407946bc0" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                </div>
+                
+                <h2>Advantages of Constructor</h2> 
+               <p> 1.Constructors in Java initialize objects with initial values and ensure they are in a valid state upon creation.<br>
+        2.They provide encapsulation and data hiding by setting the initial values of private instance variables.<br>
+        3.Constructor chaining enables code reusability by avoiding duplication of initialization logic.<br>
+        4.Constructors with different parameter sets offer flexibility in object initialization.<br>
+        5.Overloading allows multiple constructors in a class with different parameter sets.<br>
+        <br>
+        <br>
+        <br>
+        </p>
+        </div>
+        </div>
+          <footer>
+            &copy;Copyrights: <a href="mailto:nobooks125@gmail.com">nobooks125@gmail.com</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script>
+        let btn=document.querySelector(".hamburg");
+        let show=document.querySelector(".sidebar");
+        let homebtn=document.querySelector(".home");
+        let homeShow=document.querySelector(".menu");
+        homebtn.addEventListener("click",()=>{
+            homeShow.classList.toggle("add");
+            show.classList.remove("add");
+        });
+
+        btn.addEventListener("click",()=>{
+            show.classList.toggle("add");
+            homeShow.classList.remove("add");
+        });
+    </script>
+  </body>
+</html>

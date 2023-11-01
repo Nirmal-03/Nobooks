@@ -1,0 +1,112 @@
+
+* {
+	box-sizing: border-box;
+}
+h3 {
+	margin: 10px 0;
+    color: #03BFCB;
+}
+
+h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+    color: #03BFCB;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+    color: #03BFCB;
+}
+
+.card-container {
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+    padding-bottom: 50px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+    margin: 0 40px;
+}
+.card-container{ transition: all .2s ease-in-out; }
+.card-container:hover { transform: scale(1.1); }
+.card-container .images{
+    display: flex;
+    justify-content: center;
+}
+.card-container .images .img {
+	border: 1px solid #03BFCB;
+	border-radius: 10%;
+	padding: 7px;
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.card-container .images .janish{
+    background-image: url(../images/JanishKumar.jpg);
+}
+.card-container .images .nirmal{
+    background-image: url(../images/Nirmal.jpg);
+}
+.card-container .images .yuvaraj{
+    background-image: url(../images/yuvaraj.jpg);
+}
+
+button.primary {
+	background-color: transparent;
+	border: 1px solid #03BFCB;
+	border-radius: 3px;
+	color: #02899C;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+.bx{
+    font-size: 25px;
+    color: #02899C;
+}
+.buttons .ho:hover{
+    background-color: #03BFCB!important;
+    color:#ffff;
+}
+.primary:hover{
+    background-color: #03BFCB;
+    color:#ffff;
+}
+button:hover{
+    background-color: #03BFCB;
+    color:#ffff;
+}
+button.primary.ghost {
+	background-color: transparent;
+	color: #02899C;
+}
+
+@media (max-width:1200px){
+    .card-container{
+        margin:0 20px;
+    }
+}
+@media (max-width:1000px){
+    .content{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .card-container{
+        margin: 30px 0;
+    }
+}
+@media (max-width:992px){
+    .menu{
+        z-index: 1!important;
+    }
+    .menu ul{
+        padding-bottom: 0!important;
+    }
+}

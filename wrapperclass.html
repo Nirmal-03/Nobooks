@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOPS</title>
+    <link rel="stylesheet" href="./styles/mainstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <h2>NoBooks</h2>
+        <div class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">AboutUs</a></li>
+            <li><a href="./update.html">Update</a></li>
+            <li><a href="./contact.html">ContactUs</a></li>
+          </ul>
+        </div>
+        <div class="icons">
+          <div class="home">
+            <i class="bx bxs-home"><a href="index.html"></a></i>
+          </div>
+          <div class="hamburg">
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="sidebar">
+          <h3>OOPS & JAVA CONCEPT</h3>
+          <div class="topics">
+            <a href="./oops.html">INTRODUCTION</a>
+            <a href="./inheritance.html">INHERITANCE</a>
+            <a href="./Polymorph.html">POLYMORPHISM</a>
+            <a href="./abstraction.html">ABSTRACTION</a>
+            <a href="./encaps.html">ENCAPSULATION</a>
+            <a href="./constructor.html">CONSTRUCTORS</a>
+            <a href="./packages.html">PACKAGES</a>
+            <a href="./thread.html">THREAD</a>
+            <a href="./multithread.html">MULTITHREADING</a>
+            <a href="./threadlife.html">LIFE CYCLE OF THREAD</a>
+            <a href="./threadcreation.html">CREATING A THREAD</a>
+            <a href="./exception.html">EXCEPTION HIERARCHY</a>
+            <a href="./exhandling.html">EXCEPTION HANDLING</a>
+            <a href="./array.html">ARRAYS</a>
+            <a href="./strings.html">STRING</a>
+            <a href="./wrapperclass.html">WRAPPER CLASS</a>
+            <a href="./accessmodifier.html">ACCESS MODIFIRES</a>
+            <a href="./generic.html">GENERIC PROGRAM</a>
+            <a href="./jdk.html">JDK</a>
+          
+          </div>
+        </div>
+        <div class="content">
+          <div id="intro">
+            <h1>Wrapper class</h1>
+            <br />
+            <ul>
+              <li>
+                The wrapper class in Java provides the mechanism to convert
+                primitive into object and object into primitive.
+              </li>
+
+              <li>In Java, we have 8 primitive data types.</li>
+              <li>Each primitive type has a corresponding wrapper class.</li>
+            </ul>
+            <br />
+            <div class="wrap">
+              <img src="./images/wrapperclass.png" alt="wrapperclass" />
+            </div>
+            <br />
+            <h2>Why do we need wrapper?</h2>
+            <br />
+            <ul>
+              <li>
+                Whenever the primitive types are required as an object, wrapper
+                classes can be used. Wrapper classes also include methods to
+                unwrap the object and give back the primitive data type.
+              </li>
+              <li>
+                In java.util package, the classes handle only objects and that's
+                why in this case wrapper class helps.
+              </li>
+              <li>
+                In the Collection framework, Data Structures such as ArrayList
+                stores only the objects and not the primitive types.
+              </li>
+              <li>
+                Java Collections deal only with objects; to store a primitive
+                type in one of these classes, you need to wrap the primitive
+                type in a class.
+              </li>
+            </ul>
+            <br />
+
+            <h2>Converting Primitive Types to Wrapper Class:</h2>
+            <br />
+            <p>
+              There are two ways for converting a primitive type into an
+              instance of the corresponding wrapper class
+            </p>
+            <ul>
+              <li>Using constrcutors</li>
+              <li>Using static factory methods</li>
+            </ul>
+            <br />
+            <h2>Example for boxing:</h2>
+            <br />
+            <div class="ex">
+              <iframe
+                src="https://trinket.io/embed/java/2664db49d5"
+                width="100%"
+                height="356"
+                frameborder="0"
+                marginwidth="0"
+                marginheight="0"
+                allowfullscreen
+              ></iframe>
+              <br />
+            </div>
+            <h2>Example for Unboxing:</h2>
+            <br />
+            <p>
+              The conversion of wrapper class type into corresponding primitive
+              type, is known as Unboxing. Let's see the example of unboxing
+            </p>
+            <br />
+            <br />
+            <div class="ex2">
+              <iframe
+                src="https://trinket.io/embed/java/519d4ad180"
+                width="100%"
+                height="356"
+                frameborder="0"
+                marginwidth="0"
+                marginheight="0"
+                allowfullscreen
+              ></iframe>
+              <br />
+            </div>
+            <br />
+            <h2>Example for Autoboxing:</h2>
+            <br />
+            <p>
+              The automatic conversion of primitive data type into its
+              corresponding wrapper class is known as autoboxing, for example,
+              byte to Byte, char to Character, int to Integer, long to Long,
+              float to Float, boolean to Boolean, double to Double, and short to
+              Short.
+            </p>
+            <br />
+            <br />
+            <div class="ex3">
+              <iframe
+                src="https://trinket.io/embed/java/83d2f6802f"
+                width="100%"
+                height="356"
+                frameborder="0"
+                marginwidth="0"
+                marginheight="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <footer>
+            &copy;Copyrights:
+            <a href="mailto:nobooks125@gmail.com">nobooks125@gmail.com</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script>
+      let btn = document.querySelector(".hamburg");
+      let show = document.querySelector(".sidebar");
+      let homebtn = document.querySelector(".home");
+      let homeShow = document.querySelector(".menu");
+      homebtn.addEventListener("click", () => {
+        homeShow.classList.toggle("add");
+        show.classList.remove("add");
+      });
+
+      btn.addEventListener("click", () => {
+        show.classList.toggle("add");
+        homeShow.classList.remove("add");
+      });
+    </script>
+  </body>
+</html>
